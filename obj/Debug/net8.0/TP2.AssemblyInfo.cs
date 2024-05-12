@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0542338519a40c9f9cd712ccc7099def853b4908")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
