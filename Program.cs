@@ -6,7 +6,7 @@ namespace tp2_CSharp
     {
         static void Main (string[] args)
         {
-            Exercicio4();
+            Exercicio3();
         }
 
         public static void Exercicio2 ()
@@ -31,11 +31,33 @@ namespace tp2_CSharp
             Console.WriteLine($"Soma dos números Pares: {par} \nSoma dos números Ímpares: {impa}");
         }
 
+        public static void Exercicio3 ()
+        {
+            int n;
+            bool primo = true;
+
+            Console.Write("\nVerificar se é um número primo \nDigite o número: ");
+            n = int.Parse(Console.ReadLine());
+
+            for (int i = 2; i < Math.Sqrt(n); i ++){
+                if (n % i == 0){
+                    primo = false;
+                }
+            }
+
+            if (primo){
+                Console.WriteLine($"{n} é um número primo");
+            }else {
+                Console.WriteLine($"{n} não é um número primo");
+            }
+            Console.WriteLine();
+        }
+
         public static void Exercicio4 ()
         {
             int nDigitado, primeiro, segundo, terceiro;
 
-            Console.Write("Digite um valor iniciar a sequência Fibonacci: ");
+            Console.Write("\nDigite um valor iniciar a sequência Fibonacci: ");
             nDigitado = int.Parse(Console.ReadLine());
 
             primeiro = nDigitado;
