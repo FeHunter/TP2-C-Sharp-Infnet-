@@ -6,7 +6,51 @@ namespace tp2_CSharp
     {
         static void Main (string[] args)
         {
-            Exercicio3();
+            Exercicio1();
+            // Exercicio2();
+            // Exercicio3();
+            // Exercicio4();
+        }
+
+        public static void Exercicio1 ()
+        {
+            char n;
+            int h = 0, m = 0, c = 0, i = 0, total;
+
+            Console.WriteLine("\n Digite [h] Homem, [m] Mulher, [c] Criança, [i] Idoso, [f] Finalizar");
+            Console.Write("Digite: ");
+            n = char.Parse(Console.ReadLine());
+            
+            while (n != 'f'){
+                switch(n){
+                    case 'h': h ++; break;
+                    case 'm': m ++; break;
+                    case 'c': c ++; break;
+                    case 'i': i ++; break;
+                    default:
+                        Console.WriteLine("Caractere Inválido:\nDigite [h] Homem, [m] Mulher, [c] Criança, [i] Idoso, [f] Finalizar");
+                        Console.Write("Digite: ");
+                        n = char.Parse(Console.ReadLine());
+                        break;
+                }
+                Console.WriteLine("\nDigite [h] Homem, [m] Mulher, [c] Criança, [i] Idoso, [f] Finalizar");
+                Console.Write("Digite: ");
+                n = char.Parse(Console.ReadLine());
+            }
+            
+            total = h + m + c + i;
+            double hPorcen, mPorcen, cPorcen, iPorcen;
+            hPorcen = (double)h / total * 100;
+            mPorcen = (double)m / total * 100;
+            cPorcen = (double)c / total * 100;
+            iPorcen = (double)i / total * 100;
+
+            Console.WriteLine($"\nTotal: {total}");
+            Console.WriteLine($"Homens: {h}, {hPorcen.ToString("F2")}%");
+            Console.WriteLine($"Mulheres: {m}, {mPorcen.ToString("F2")}%");
+            Console.WriteLine($"Crianças: {c}, {cPorcen.ToString("F2")}%");
+            Console.WriteLine($"Idosos: {i}, {iPorcen.ToString("F2")}% \n");
+
         }
 
         public static void Exercicio2 ()
