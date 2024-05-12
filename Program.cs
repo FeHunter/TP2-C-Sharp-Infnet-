@@ -6,7 +6,7 @@ namespace tp2_CSharp
     {
         static void Main (string[] args)
         {
-            Exercicio2();
+            Exercicio4();
         }
 
         public static void Exercicio2 ()
@@ -29,6 +29,27 @@ namespace tp2_CSharp
             }
 
             Console.WriteLine($"Soma dos números Pares: {par} \nSoma dos números Ímpares: {impa}");
+        }
+
+        public static void Exercicio4 ()
+        {
+            int nDigitado, primeiro, segundo, terceiro;
+
+            Console.Write("Digite um valor iniciar a sequência Fibonacci: ");
+            nDigitado = int.Parse(Console.ReadLine());
+
+            primeiro = nDigitado;
+            segundo = nDigitado + 1;
+
+            Console.Write($"{primeiro} {segundo}");
+
+            // Mostra 10 números apartir do número informado.
+            for (int i = 1; i < 10; i++){
+                terceiro = primeiro + segundo;
+                Console.Write($" {terceiro}");
+                primeiro = segundo;
+                segundo = terceiro;
+            }
         }
     }
 }
