@@ -7,9 +7,9 @@ namespace tp2_CSharp
         static void Main (string[] args)
         {
             Exercicio1();
-            // Exercicio2();
-            // Exercicio3();
-            // Exercicio4();
+            Exercicio2();
+            Exercicio3();
+            Exercicio4();
         }
 
         public static void Exercicio1 ()
