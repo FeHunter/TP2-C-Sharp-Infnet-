@@ -105,7 +105,7 @@ namespace tp2_CSharp
             nDigitado = int.Parse(Console.ReadLine());
 
             primeiro = nDigitado;
-            segundo = nDigitado + 1;
+            segundo = nDigitado;
 
             Console.Write($"{primeiro} {segundo}");
 
